@@ -1,0 +1,20 @@
+<div class="row">
+        <div class="row g-3 mt-4">
+            <table class="table table-striped text-center">
+                <thead>
+                    <tr>
+                        <td> Name</td>
+                        <td>Trip</td>
+                        <td>Airline</td>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let i of passenger.data">
+                    <td>{{i.name}}</td>
+                    <td>{{i.trips}}</td>
+                    <td>{{i.airline[0].name}}</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
